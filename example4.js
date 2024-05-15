@@ -1,8 +1,2 @@
-let data = fetchData();
-let result;
+let result = fetchData() ? processData(data) : 'No data';
 
-if (data) {
-  result = processData(data);
-} else {
-  result = 'No data';
-}
