@@ -1,2 +1,2 @@
-let result = fetchData() ? processData(data) : 'No data';
+let result = processData(fetchData()) || 'No data';
 
